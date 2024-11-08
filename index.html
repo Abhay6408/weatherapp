@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>WEATHER APP</h2>
+        <div class="window">
+            <div class="left">
+                <h3>Enter City Name</h3>
+                <input class="cityname" type="text" placeholder="eg.Delhi,bhopal,indore">
+                
+                <button class="srchbtn ">Submit</button>
+                <button class="locbtn">Use Current Location</button>
+            
+        </div>
+            <div class="right">
+
+
+
+                <div class="firstcard">
+                    <div class="details">
+                        <h3>Bhopal</h3>
+                        <h5>Temperature: __°C</h5>
+                        <h5>Wind: __ M/S</h5>
+                        <h5>Humidity: __%</h5>
+                    </div>
+                    <div class="svgdiv">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100" height="100"
+                            style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd">
+                            <defs>
+                                <style>
+                                    .fil1 {
+                                        fill: #fffffe;
+                                        fill-rule: nonzero
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_x0020_1">
+                                <rect width="100" height="100" rx="12.5" ry="12.5" style="fill:#ff9800" />
+                                <path class="fil1"
+                                    d="M78 72h-26.94c-2.682 0-5.11-1.09-6.869-2.851-1.76-1.762-2.85-4.187-2.85-6.87 0-2.488 .936-4.77 2.492-6.493 1.34-1.49 3.142-2.565 5.2-3 .227-2.3 1.255-4.37 2.8-5.915 1.76-1.76 4.187-2.851 6.87-2.851 1.837 0 3.585 .513 5.087 1.44 1.243 .765 2.311 1.812 3.116 3.08 .455-.075 .906-.095 1.512-.095 1.783 0 3.5 .488 4.99 1.37 1.24 .734 2.32 1.747 3.152 2.987 .452-.062 .89-.093 1.317-.093 2.32 0 4.464 .828 6.14 2.189 1.68 1.376 2.9 3.303 3.38 5.507 .154 .693 .235 1.39 .235 2.09 0 2.681-1.094 5.12-2.86 6.88-1.761 1.76-4.187 2.851-6.867 2.851z" />
+                                <path class="fil1"
+                                    d="M41.88 67.94h-18.56c-2.382 0-4.55-.973-6.12-2.543-1.569-1.57-2.54-3.738-2.54-6.12 0-.623 .072-1.247 .21-1.862 .435-1.942 1.532-3.642 3.039-4.858 1.516-1.24 3.442-1.986 5.527-1.986 .427 0 .866 .033 1.318 .105 .473-2.06 1.617-3.827 3.33-4.974l-.001-.004c1.528-.902 3.292-1.402 5.123-1.402 .46 0 .933 .034 1.414 .106 .204 .029 .41 .066 .617 .109 .843-1.383 1.985-2.517 3.322-3.339 1.55-.953 3.358-1.484 5.257-1.484 2.762 0 5.273 1.13 7.093 2.654 1.135 1.135 2 2.539 2.493 4.105a16.77 16.77 0 0 0-2.65 1.174c-1.798 1.127-3.515 2.349-5.04 4.01-1.54 1.54-2.58 3.48-3.004 5.589a16.83 16.83 0 0 0-4.395 2.835c-1.663 1.849-2.573 4.235-2.573 6.718 0 .176 .003 .351 .01 .526a16.82 16.82 0 0 0 1.61 4.77z" />
+                                <path class="fil1"
+                                    d="M46.97 33.12a12.08 12.08 0 0 1 3.12-3.54c2.03-1.553 4.56-2.474 7.31-2.474 3.326 0 6.337 1.348 8.513 3.525 2.176 2.177 3.522 5.188 3.522 8.514 0 1.746-.377 3.412-1.054 4.919-.792 1.828-1.89 3.46-3.11 5.024a16.775 16.775 0 0 0-4.56-3.507c-1.509-.849-3.211-1.292-4.95-1.292-.441 0-.878 .029-1.31 .087l-.044-.145c-.548-1.75-1.517-3.34-2.813-4.636-1.145-1.145-2.502-2.021-3.978-2.592l-.001 .002a11.26 11.26 0 0 0-2.93-.695zM56.2 25.6V15.95h2.99V25.6zM46.72 31.44 40.49 25.21l2.1-2.1 6.23 6.23zM66.17 29.14l6.23-6.23 2.1 2.1-6.23 6.23zM81 41.6h-9.63v-2.99H81zM25.6 72.02v4.38h-2.99v-4.38zM30.4 76.82v4.4h-2.99v-4.4zM35.2 72.02v4.38h-2.99v-4.38zM40 76.82v4.4h-2.99v-4.4zM44.8 72.02v4.38h-2.99v-4.38zM51.2 81.59V85h-2.99v-3.41zM56 76.82v4.4h-2.99v-4.4zM60.8 81.59V85h-2.99v-3.41zM65.6 76.82v4.4h-2.99v-4.4zM70.4 81.59V85h-2.99v-3.41zM75.2 76.82v4.4h-2.99v-4.4zM80 81.59V85h-2.99v-3.41z" />
+                            </g>
+                        </svg>
+
+                    </div>
+                </div>
+            
+        
+            <div class="futurecards">
+                <h3>Four Days Forecast</h3>
+                <ul class="wcards">
+                    <li class="card">
+                        <h3>Bhopal</h3>
+                        <h5>Temperature: __°C</h5>
+                        <h5>Wind: __ M/S</h5>
+                        <h5>Humidity: __%</h5>
+                    </li>
+                    <li class="card">
+                        <h3>Bhopal</h3>
+                        <h5>Temperature: __°C</h5>
+                        <h5>Wind: __ M/S</h5>
+                        <h5>Humidity: __%</h5>
+                    </li>
+                    <li class="card">
+                        <h3>Bhopal</h3>
+                        <h5>Temperature: __°C</h5>
+                        <h5>Wind: __ M/S</h5>
+                        <h5>Humidity: __%</h5>
+                    </li>
+                    <li class="card">
+                        <h3>Bhopal</h3>
+                        <h5>Temperature: __°C</h5>
+                        <h5>Wind: __ M/S</h5>
+                        <h5>Humidity: __%</h5>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
